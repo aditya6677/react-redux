@@ -1,16 +1,31 @@
 {
-  "name": "myapp",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+  "name": "coding-calendar-using-react",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sandeep Kumar",
+    "email": "6677aditya@gmail.com",
+    "url": "http://iamsandeep.xyz"
   },
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aditya6677/react-redux.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "create-react-app"
+  ]
 }
